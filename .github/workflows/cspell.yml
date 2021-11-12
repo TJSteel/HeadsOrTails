@@ -1,0 +1,12 @@
+name: cspell-action
+on:
+  pull_request: null
+  push:
+    branches:
+      - master
+jobs:
+  cspell:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2.4.0
+      - uses: streetsidesoftware/cspell-action@v1.3.4
